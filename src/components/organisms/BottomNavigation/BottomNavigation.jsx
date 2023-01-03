@@ -9,7 +9,10 @@ export const BottomNavigationCustomized = () => {
     return (
         <BottomNavigation
         sx={{
-            backgroundColor:theme.primary
+            backgroundColor:theme.primary,
+            bottom: "0",
+            position: "fixed",
+            width: "100%"
         }}
         showLabels
         // value={value}
@@ -17,9 +20,9 @@ export const BottomNavigationCustomized = () => {
         //     setValue(newValue);
         // }}
         >
-        <BottomNavigationAction label="Home" icon={<IoHomeOutline />} />
-        <BottomNavigationAction label="Dishes list" icon={<IoFastFoodSharp />} />
-        <BottomNavigationAction label="Diet list" icon={<IoPeopleOutline />} />
+        <BottomNavigationAction label="Home" icon={<IoHomeOutline />} sx={{color:'white'}} />
+        <BottomNavigationAction label="Dishes list" icon={<IoFastFoodSharp />} sx={{color:'white'}} />
+        <BottomNavigationAction label="Diet list" icon={<IoPeopleOutline />} sx={{color:'white'}} />
         </BottomNavigation>
     )
 }

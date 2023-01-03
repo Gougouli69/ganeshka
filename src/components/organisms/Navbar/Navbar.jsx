@@ -8,7 +8,6 @@ export const Navbar = () => {
     return (
         <StyledNavbar>
             <Logo></Logo>
-            <Bell></Bell>
             <ImageProfil></ImageProfil>
         </StyledNavbar>
     )
