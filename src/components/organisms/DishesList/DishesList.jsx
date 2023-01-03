@@ -4,12 +4,12 @@ import { MealCard } from "../../molecules/MealCard/MealCard";
 export const DishesList = () => {
 
     let data = ['Victor', 'LeoLeReuf', 'lucas'];
-
+    let i = 0;
     return (
         <>
             {
                 data.map(element => {
-                    return <MealCard nameDish={element}></MealCard>
+                    return <MealCard key={i++} nameDish={element}></MealCard>
                 })
             }
         </>
