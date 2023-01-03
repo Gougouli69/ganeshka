@@ -2,8 +2,8 @@ import React from "react";
 import { StyledText } from "./styles";
 
 
-export const Text = () => {
+export const Text = (props) => {
     return ( 
-        <StyledText></StyledText>
+        <StyledText>{props.children}</StyledText>
     )
 }
