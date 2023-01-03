@@ -1,15 +1,14 @@
 import React from "react";
 import { MealCard } from "../../molecules/MealCard/MealCard";
 
-export const DishesList = () => {
-
-    let data = ['Victor', 'LeoLeReuf', 'lucas'];
+export const DishesList = ({dishes}) => {
+    console.log("dishes", dishes)
     let i = 0;
     return (
         <>
             {
-                data.map(element => {
-                    return <MealCard key={i++} nameDish={element}></MealCard>
+                dishes.map(element => {
+                    return <MealCard key={element.id} nameDish={element.name}></MealCard>
                 })
             }
         </>
