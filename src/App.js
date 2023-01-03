@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import { ThemeProvider } from 'styled-components';
 import {getTheme} from './themes/default.js'
-import { Navbar } from './components/organisms/Navbar';
+import { Navbar } from './components/organisms/Navbar/Navbar';
 import { StyledText } from './components/atoms/Text/styles';
-import { MealCard } from './components/molecules/MealCard/MealCard';
+import { DishesList } from './components/organisms/DishesList/DishesList';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Navbar></Navbar>
         <StyledText> Yplé </StyledText>
-        <MealCard nameDish='Disheee'></MealCard>
+        <DishesList></DishesList>
       </div>
     </ThemeProvider>
   );
