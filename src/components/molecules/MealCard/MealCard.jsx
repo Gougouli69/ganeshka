@@ -4,11 +4,11 @@ import { StyledMealCard } from "./styles";
 import { Text } from "../../atoms/Text/Text";
 
 
-export const MealCard = (props) => {
+export const MealCard = ({value}) => {
     return(
         <StyledMealCard>
-            <ImageMeal></ImageMeal>
-            <Text>{props.nameDish}</Text>
+            <ImageMeal src={value.picture}></ImageMeal>
+            <Text>{value.name}</Text>
         </StyledMealCard>
     )
 }

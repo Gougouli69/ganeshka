@@ -1,9 +1,10 @@
 import React from "react";
 import { StyledImageMeal } from "./styles";
 
-export const ImageMeal = () => {
+export const ImageMeal = ({src}) => {
     return(
-        <StyledImageMeal src={process.env.PUBLIC_URL +"/dist/images/logo.jpg"} alt="image">
+        //<StyledImageMeal src={process.env.REACT_APP_API_BASE_URL+'/assets/'+src} alt="image">
+        <StyledImageMeal src={'https://urzggw0p.directus.app/assets/'+src} alt="image">
         </StyledImageMeal>
     ) 
 }
