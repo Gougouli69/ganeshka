@@ -4,5 +4,5 @@ export const StyledMealCard = styled.div`
     width: 40vw;
     height 15vh;
     margin: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 `
