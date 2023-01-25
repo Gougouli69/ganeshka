@@ -30,14 +30,11 @@ export default function useLoadingDishes(){
             setIsLoading(false)
 
         });
-        console.log(  "test2", dishes);
     }
 
     useEffect(() => {
-console.log('Actualisation dishes', dishes);
-
+        console.log('Actualisation dishes', dishes);
     }, [dishes])
 
     return {dishes, isLoading}
-    
 }
