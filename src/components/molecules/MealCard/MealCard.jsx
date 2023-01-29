@@ -8,7 +8,7 @@ export const MealCard = ({value}) => {
     return(
         <StyledMealCard>
             <ImageMeal src={value.picture}></ImageMeal>
-            <Text>{value.name}</Text>
+            <Text margin={0}>{value.name}</Text>
         </StyledMealCard>
     )
 }

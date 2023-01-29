@@ -5,11 +5,12 @@ import './style.css';
 import { useNavigate } from "react-router-dom";
 
 
-export const DishesList = ({dishes}) => {
+export const DishesList = ({dishes, addbutton}) => {
     let navigate = useNavigate(); 
     return (
         <>
-            <Button className='addDish' onClick={() => navigate('/add-dishes') } variant="contained">Ajouter un repas</Button>
+            {addbutton ? <Button className='addDish' onClick={() => navigate('/add-dishes') } variant="contained">Ajouter un repas</Button> : ''}
+            
             <div className="listDish">
             {
                 dishes.map(element => {

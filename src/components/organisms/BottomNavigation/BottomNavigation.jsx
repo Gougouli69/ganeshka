@@ -19,7 +19,6 @@ export const BottomNavigationCustomized = () => {
         <BottomNavigation
             sx={{
             backgroundColor:theme.primary,
-            color: '#FFF',
             bottom: "0",
             position: "fixed",
             width: "100%"

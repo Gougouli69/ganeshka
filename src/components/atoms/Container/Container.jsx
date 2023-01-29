@@ -3,24 +3,10 @@ import PropTypes from 'prop-types';
 import {StyledContainer} from './styles.js';
 
 export const Container = ({...props}) => {
-    const {backgroundColor, margin, padding} = props;
+    const {backgroundColor, margin, padding, sx} = props;
 
 
-    return( <StyledContainer {...props}></StyledContainer>)
-    // return (
-    //     <div className={['container', props?.className].join(" ")}  style={
-    //         {
-    //             ...{
-    //                 backgroundColor: backgroundColor || 'transparent',
-    //                 padding: padding || '0px',
-    //                 margin: margin || '0px',
-    //             },
-    //             ...props?.style
-    //         }
-    //     }>
-    //         {props.children}
-    //     </div>
-    //     )
+    return( <StyledContainer {...props} style={sx}></StyledContainer>)
 }
 
 Container.propTypes ={ 
