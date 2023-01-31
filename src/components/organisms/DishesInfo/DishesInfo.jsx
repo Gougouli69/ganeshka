@@ -73,7 +73,7 @@ export const DishesInfo = ({id}) => {
     return (
         <>
             <CancelIcon onClick={handleClickOpen}></CancelIcon>
-            <ModeEditIcon></ModeEditIcon>
+            <ModeEditIcon onClick={() =>  navigate('/edit-dishes/'+dishes.id)}></ModeEditIcon>
             <p>Nom du plat : {dishes.name}</p>
             <ImageMeal src={dishes.picture}></ImageMeal>
             <p>Description : {dishes.Description}</p>

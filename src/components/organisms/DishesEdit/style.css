@@ -1,0 +1,18 @@
+.flex-zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0% 20% 0% 20%;
+    gap: 1em;
+}
+
+.title{
+    margin-top: 5%;
+}
+
+.composition-zone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0% 20% 0% 20%;
+}
