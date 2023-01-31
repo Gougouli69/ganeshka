@@ -9,7 +9,7 @@ export const DishListPage = () => {
     return (
         <>
             <Navbar></Navbar>
-            { !isLoading ? <DishesList dishes={dishes}/> : "Loading ... </>"}
+            { !isLoading ? <DishesList dishes={dishes} addbutton='OK'/> : "Loading ... </>"}
             <BottomNavigationCustomized></BottomNavigationCustomized>
         </>
     )
