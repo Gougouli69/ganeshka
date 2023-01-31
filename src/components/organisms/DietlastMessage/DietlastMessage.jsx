@@ -11,7 +11,7 @@ export const DietlastMessage = ({...props}) => {
         <Container 
             padding={"5px 20px"} 
             backgroundColor={theme.primary} 
-            margin={'10px 0 '} 
+            margin={'30px 0 '} 
             sx={{color:'white'}}
             >
 
