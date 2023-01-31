@@ -10,10 +10,11 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button'
 import { useState } from "react";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 
 
 export const MealCard = ({value}) => {
+    const navigate = useNavigate(); 
 
     const [open, setOpen] = useState(false);
 
@@ -40,6 +41,7 @@ export const MealCard = ({value}) => {
             }
         ).finally(() =>{
             setOpen(false);
+            navigate('/');
         });
     }
     return(
