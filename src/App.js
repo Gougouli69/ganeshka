@@ -7,6 +7,7 @@ import { NoPage } from './components/pages/NoPage/NoPage';
 import { HomePage } from './components/pages/HomePage/Homepage';
 import DishListPage from './components/pages/DishListPage/DishListPage';
 import {DishAddPage} from './components/pages/DishAddPage/DishAddPage';
+import { LoadingPage } from './components/pages/LoadingPage/LoadingPage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           {/* <Route path="/" element={<Layout />}> */}
             <Route index element={<HomePage />} />
             <Route path="/dishes" element={<DishListPage />} />
+            <Route path="/loading" element={<LoadingPage />} />
             <Route path="/add-dishes" element={<DishAddPage />} />
             <Route path="*" element={<NoPage />} />
           {/* </Route> */}
