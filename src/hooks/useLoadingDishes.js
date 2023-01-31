@@ -32,9 +32,7 @@ export default function useLoadingDishes(){
         });
     }
 
-    useEffect(() => {
-        console.log('Actualisation dishes', dishes);
-    }, [dishes])
+    useEffect(() => {}, [dishes])
 
     return {dishes, isLoading}
 }

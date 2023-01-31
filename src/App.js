@@ -7,9 +7,10 @@ import { NoPage } from './components/pages/NoPage/NoPage';
 import { HomePage } from './components/pages/HomePage/Homepage';
 import DishListPage from './components/pages/DishListPage/DishListPage';
 import {DishAddPage} from './components/pages/DishAddPage/DishAddPage';
-
+import { DishInfoPage } from './components/pages/DishInfoPage/DishInfoPage';
 
 function App() {
+  
   return (
     <ThemeProvider theme={getTheme()}>
       <div className="App">
@@ -19,6 +20,7 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="/dishes" element={<DishListPage />} />
             <Route path="/add-dishes" element={<DishAddPage />} />
+            <Route path="/info-dishes/:id" element={<DishInfoPage />} />
             <Route path="*" element={<NoPage />} />
           {/* </Route> */}
         </Routes>
