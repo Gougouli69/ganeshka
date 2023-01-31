@@ -9,12 +9,9 @@ export const LoadingPage = () => {
     let valueLoading = 0;
     for(let i=0; i<100;i++){
         incr()
-        // console.log(i)
-        // setTimeout(() => {}, 300);
     }
     function incr(){
         valueLoading += 1;
-        // console.log(valueLoading)
     }
 
     const theme = useTheme();

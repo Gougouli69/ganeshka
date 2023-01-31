@@ -30,7 +30,6 @@ export const DishesInfo = ({id}) => {
         ).then(
             (response) => {
                 setDishes(response?.data?.data);
-                console.log(dishes);
             }
         ).finally(() =>{
             

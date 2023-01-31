@@ -6,7 +6,6 @@ import { useTheme } from "styled-components";
 export const DietlastMessage = ({...props}) => {
     
     const theme = useTheme()
-    console.log(theme)
     return (
         <Container 
             padding={"5px 20px"} 
